@@ -1,0 +1,204 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #252525;
+    --accent-color: #009EE3;
+    --theme-overlay: rgba(0, 0, 0, 0.4);
+    --accent-overlay: rgba(15, 155, 224, 0.78);
+    --text-color:#969696;
+}
+
+/* header */
+header{
+    height: 100vh;
+}
+nav{
+    background-color: var(--theme-overlay);
+    
+}
+.navbar-toggler{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+.navbar-toggler:focus,.navbar-toggler:active{
+    box-shadow: none;
+}
+ .navbar-brand{
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+ }
+ .nav-link{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 300;
+ }
+
+ .carousel-item img{
+    height: 100vh;
+    width: 100vh;
+    max-height: 370px;
+ }
+ .controll-carousel span{
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+ }
+ .controll-carousel span:hover{
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+ }
+ .carousel-caption h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+ }
+ .carousel-caption p{
+    font-size: 2rem;
+    font-weight: 400;
+ }
+ .carousel-caption button{
+    background-color: var(--accent-overlay);
+    font-size: 1.8rem;
+    position: relative;
+}
+.carousel-caption button span{
+     color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+    transition-duration: 0.3s;
+ }
+ .carousel-caption button::after{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    z-index: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ .carousel-caption button:hover::after{
+    right: 0;
+ }
+ .carousel-caption button:hover span{
+    color: var(--accent-color);
+ }
+/* -/ header */
+
+
+
+
+/* sm */
+@media screen and (min-width: 577px){
+    .position-sm-static{
+        position: static !important;
+    }
+    .position-sm-relative{
+        position: relative !important;
+    }
+    .position-sm-fixed{
+        position: fixed !important;
+    }
+    .position-sm-absolute{
+        position: absolute !important;
+    }
+    .position-sm-sticky{
+        position: sticky !important;
+    }
+
+   
+}
+/* md */
+@media screen and (min-width: 769px){
+    .position-md-static{
+        position: static !important;
+    }
+    .position-md-relative{
+        position: relative !important;
+    }
+    .position-md-fixed{
+        position: fixed !important;
+    }
+    .position-md-absolute{
+        position: absolute !important;
+    }
+    .position-md-sticky{
+        position: sticky !important;
+    }
+
+
+    
+
+    .carousel-item img{
+        
+        max-height: 570px;
+     }
+   
+}
+/* lg */
+@media screen and (min-width: 993px){
+    .position-lg-static{
+        position: static !important;
+    }
+    .position-lg-relative{
+        position: relative !important;
+    }
+    .position-lg-fixed{
+        position: fixed !important;
+    }
+    .position-lg-absolute{
+        position: absolute !important;
+    }
+    .position-lg-sticky{
+        position: sticky !important;
+    }
+
+
+   
+}
+/* xl */
+@media screen and (min-width: 1200px){
+    .position-xl-static{
+        position: static !important;
+    }
+    .position-xl-relative{
+        position: relative !important;
+    }
+    .position-xl-fixed{
+        position: fixed !important;
+    }
+    .position-xl-absolute{
+        position: absolute !important;
+    }
+    .position-xl-sticky{
+        position: sticky !important;
+    }
+}
+/* xxl */
+@media screen and (min-width: 1401px){
+    .position-xxl-static{
+        position: static !important;
+    }
+    .position-xxl-relative{
+        position: relative !important;
+    }
+    .position-xxl-fixed{
+        position: fixed !important;
+    }
+    .position-xxl-absolute{
+        position: absolute !important;
+    }
+    .position-xxl-sticky{
+        position: sticky !important;
+    }
+}
