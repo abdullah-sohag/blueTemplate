@@ -15,7 +15,7 @@ html{
 
 /* header */
 header{
-    height: 100vh;
+    /* height: 100vh; */
 }
 nav{
     background-color: var(--theme-overlay);
@@ -64,18 +64,18 @@ nav{
     font-size: 2rem;
     font-weight: 400;
  }
- .carousel-caption button{
+ .carousel-caption button,.mor{
     background-color: var(--accent-overlay);
     font-size: 1.8rem;
     position: relative;
 }
-.carousel-caption button span{
+.carousel-caption button span,.mor span{
      color: var(--primary-color);
     position: relative;
     z-index: 1;
     transition-duration: 0.3s;
  }
- .carousel-caption button::after{
+ .carousel-caption button::after,.mor::after{
     content: '';
     position: absolute;
     background-color: var(--primary-color);
@@ -87,16 +87,57 @@ nav{
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
  }
- .carousel-caption button:hover::after{
+ .carousel-caption button:hover::after,.mor:hover::after{
     right: 0;
  }
- .carousel-caption button:hover span{
+ .carousel-caption button:hover span,.mor:hover span{
     color: var(--accent-color);
  }
 /* -/ header */
 
 
+/* main */
 
+/* welcome */
+#welcome{
+    background-color: var(--accent-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#welcome .head{
+    margin-bottom: 25px;
+}
+#welcome .head h2{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+#welcome .content p{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+#carouselExampleControlsNoTouching{
+    padding-bottom: 4rem;
+}
+.slider-coltroll-btn{
+    border: 1px solid var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 8px;
+    display: flex;
+}
+.welcom-img{
+    width: 120px;
+}
+.mor{
+    margin-left: 63%;
+    background-color: transparent;
+    border: 1.5px solid var(--primary-color);
+}
+/* -/welcome */
+
+/* -/ main */
 
 /* sm */
 @media screen and (min-width: 577px){
