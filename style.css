@@ -96,13 +96,14 @@ nav{
 /* -/ header */
 
 
+
 /* main */
 
 /* welcome */
 #welcome{
     background-color: var(--accent-color);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 #welcome .head{
     margin-bottom: 25px;
@@ -137,7 +138,159 @@ nav{
 }
 /* -/welcome */
 
+/* service */
+#service,#featured{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#service .head,#featured .head{
+    text-align: center;
+    display: flex;
+    gap: 30px;
+}
+#service .head hr,#featured .head hr{
+    accent-color: var(--accent-color);
+    width: 100px;
+    height: 2px;
+    color: var(--accent-color);
+    border: none;
+}
+#service .head h2,#featured .head h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+#service .head p,#featured .head p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+#service .card{
+    padding: 20px;
+    display: flex;
+}
+#service .card .icon-box{
+    border: 1px solid transparent;
+    width: max-content;
+    height: max-content;
+    padding: 5px 12px;
+    transform: rotate(60deg);
+    transition: 0.5s;
+}
+#service .card .icon-box:hover{
+    border: 1px solid blue;
+
+}
+#service .card .icon-box i{
+    font-size: 3rem;
+}
+#service .card .icon-box i::before{
+    transform: rotate(-60deg);
+}
+#service .card .card-body h5{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+#service .card .card-body .card-text{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+}
+/* -/service */
+
+/* featured */
+.card-innerbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-card{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    transform: translateY(-100%);
+    transition-duration: 0.7s;
+}
+.top-card i{
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+.top-card i:hover{
+    background-color: var(--accent-color);
+}
+#featured .card{
+    cursor: pointer;
+}
+#featured .card-img-overlay{
+    padding: 0;
+}
+.bottom-card{
+    height: 60%;
+    background-color: var(--theme-overlay);
+    transform: translateY(100%);
+    transition-duration: .7s;
+}
+.bottom-card h5{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.bottom-card p{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+#featured .card:hover .top-card{
+    transform: translateY(0);
+}
+#featured .card:hover .bottom-card{
+    transform: translateY(0);
+}
+/* -/ featured */
+
+
 /* -/ main */
+
+/* overlay Window */
+#overlay{
+    background-color: #252525e3;
+    position: sticky;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+}
+.overlay-carousel .card img{
+    height: 60vh;
+    width: 100%;
+}
+.overlay-carousel .card .card-body h5{
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.overlay-carousel .card .card-body p{
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.ocerlay-cross{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    z-index: 10000;
+    top: 10%;
+    right: 10%;
+    font-size: 2rem;
+}
+/* -/overlay Window */
 
 /* sm */
 @media screen and (min-width: 577px){
