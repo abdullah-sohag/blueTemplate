@@ -139,28 +139,28 @@ nav{
 /* -/welcome */
 
 /* service */
-#service,#featured,#peopleSay{
+#service,#featured,#peopleSay,#pricing{
     padding-top: 70px;
     padding-bottom: 70px;
 }
-#service .head,#featured .head,#peopleSay .head{
+#service .head,#featured .head,#peopleSay .head,#pricing .head{
     text-align: center;
     display: flex;
     gap: 30px;
 }
-#service .head hr,#featured .head hr,#peopleSay .head hr{
+#service .head hr,#featured .head hr,#peopleSay .head hr,#pricing .head hr{
     accent-color: var(--accent-color);
     width: 100px;
     height: 2px;
     color: var(--accent-color);
     border: none;
 }
-#service .head h2,#featured .head h2,#peopleSay .head h2{
+#service .head h2,#featured .head h2,#peopleSay .head h2,#pricing .head h2{
     font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 3px;
 }
-#service .head p,#featured .head p{
+#service .head p,#featured .head p,#pricing .head p{
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--text-color);
@@ -263,6 +263,9 @@ nav{
     background-size: cover,cover;
     background-attachment: scroll,fixed;
 }
+#peopleSay .head h2,#peopleSay .head hr{
+    color: var(--primary-color);
+}
 .carousel-content{
     max-width: 750px;
     margin: auto;
@@ -336,6 +339,65 @@ nav{
     width: 30px;
 }
 /* -/ what people say */
+
+/* pricing */
+#pricing .card .list-group-item{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px 0;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+#pricing .card .card-head{
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+}
+#pricing .card .sub{
+    font-size: 2.2rem;
+}
+#pricing .card .figure{
+    font-size: 3.2rem;
+}
+#pricing .card .tim{
+    font-size: 1.6rem;
+}
+#pricing .card .card-footer{
+    padding: 25px 0;
+}
+#pricing .card .card-footer:hover{
+    background-color: var(--accent-color);
+
+}
+#pricing .card .card-footer a{
+    font-size: 1.6rem;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+#pricing .card .card-footer:hover a{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+#pricing .card .list-group-item.offerd{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+#pricing .card .card-footer.offerd{
+    background-color: var(--accent-color);
+}
+#pricing .card .card-footer.offerd a{
+    color: var(--primary-color);
+}
+.offerd-shado{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#pricing .container{
+    margin
+}
+
+/* -/ pricing */
 
 
 /* -/ main */
