@@ -12,7 +12,9 @@ html{
     --accent-overlay: rgba(15, 155, 224, 0.78);
     --text-color:#969696;
 }
-
+section{
+    overflow: hidden;
+}
 /* header */
 header{
     /* height: 100vh; */

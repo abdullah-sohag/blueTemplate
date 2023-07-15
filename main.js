@@ -112,3 +112,8 @@ function hidePopUp() {
 }
 
 function propagationStop(e){e.stopPropagation()}
+
+
+// animation script
+    AOS.init();
+  
