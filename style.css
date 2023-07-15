@@ -8,7 +8,7 @@ html{
     --primary-color: #FFFFFF;
     --secondary-color: #252525;
     --accent-color: #009EE3;
-    --theme-overlay: rgba(0, 0, 0, 0.4);
+    --theme-overlay: rgba(0, 0, 0, 0.661);
     --accent-overlay: rgba(15, 155, 224, 0.78);
     --text-color:#969696;
 }
@@ -139,28 +139,28 @@ nav{
 /* -/welcome */
 
 /* service */
-#service,#featured,#peopleSay,#pricing{
+#service,#featured,#peopleSay,#pricing,#folowUs,#contact{
     padding-top: 70px;
     padding-bottom: 70px;
 }
-#service .head,#featured .head,#peopleSay .head,#pricing .head{
+#service .head,#featured .head,#peopleSay .head,#pricing .head,#folowUs .head,#contact .head{
     text-align: center;
     display: flex;
     gap: 30px;
 }
-#service .head hr,#featured .head hr,#peopleSay .head hr,#pricing .head hr{
+#service .head hr,#featured .head hr,#peopleSay .head hr,#pricing .head hr,#folowUs .head hr,#contact .head hr{
     accent-color: var(--accent-color);
     width: 100px;
     height: 2px;
     color: var(--accent-color);
     border: none;
 }
-#service .head h2,#featured .head h2,#peopleSay .head h2,#pricing .head h2{
+#service .head h2,#featured .head h2,#peopleSay .head h2,#pricing .head h2,#folowUs .head h2,#contact .head h2{
     font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 3px;
 }
-#service .head p,#featured .head p,#pricing .head p{
+#service .head p,#featured .head p,#pricing .head p,#folowUs .head p,#contact .head p{
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--text-color);
@@ -393,11 +393,102 @@ nav{
 .offerd-shado{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#pricing .container{
-    margin
-}
+
 
 /* -/ pricing */
+
+/* folowUs */
+#folowUs{
+    background-image: linear-gradient(var(--theme-overlay),var(--theme-overlay)),url('assetes/testimonial.jpg');
+    background-position: center,center;
+    background-size: cover,cover;
+    background-repeat: no-repeat,no-repeat;
+    background-attachment: scroll,fixed;
+}
+#folowUs .container{
+    margin-top: 40px;
+}
+#folowUs .icons {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#folowUs .icons i{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+#folowUs .icons:hover{
+    border-color: var(--accent-color);
+}
+#folowUs .icons:hover i{
+    color: var(--accent-color);
+}
+#folowUs .head h2,#folowUs .head p,#folowUs .head hr{
+    color: var(--primary-color);
+}
+/* -/ folowUs */
+
+
+/* contact */
+#contact form input, #contact form textarea{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.submit-btn{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    background-color: var(--accent-overlay);
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+.submit-btn:hover{
+    color: var(--primary-color);
+}
+.submit-btn::before{
+    content: '';
+    position: absolute;
+    background-color: var(--accent-color);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    transition-duration: 0.5s;
+    
+}
+button.submit-btn:hover::before{
+    right: 0;
+}
+button.submit-btn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.address-top{
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+.address-top h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.address address p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+address p span{
+    display: block;
+    margin-left: 18px;
+}
+/* -/contact */
 
 
 /* -/ main */
