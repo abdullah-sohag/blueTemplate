@@ -139,7 +139,7 @@ nav{
 /* -/welcome */
 
 /* service */
-#service,#featured,#peopleSay,#pricing,#folowUs,#contact{
+#service,#featured,#peopleSay,#pricing,#folowUs,#contact,footer{
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -490,8 +490,81 @@ address p span{
 }
 /* -/contact */
 
+/* map */
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+/* -/map */
+
 
 /* -/ main */
+
+
+/* footer */
+footer{
+    background-color: var(--theme-overlay);
+}
+footer h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-color);
+}
+footer h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-color);
+}
+footer form input{
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    font-size: 1.4rem;
+    width: 300px;
+    color: var(--text-color);
+    background-color: transparent;
+    outline: none;
+}
+
+.supmit-option{
+    max-width: max-content;
+}
+.supmit-option button{
+    background-color: var(--text-color);
+    padding: 15px;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+    right: 0px;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+.supmit-option button i::before{
+    transform: rotate(40deg);
+    
+}
+.supmit-option button i{
+    transition-duration: 1s;
+}
+.supmit-option button:hover i{
+    display: inline-block;
+    transform: translate(30px,-34px);
+    
+}
+.social-icon-box a i{
+    font-size: 4rem;
+    color: var(--text-color);
+}
+.social-icon-box a i:hover{
+    color: var(--accent-color);
+}
+.copyright{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+/* -/footer */
 
 /* overlay Window */
 #overlay{
