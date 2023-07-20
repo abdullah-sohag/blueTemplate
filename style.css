@@ -11,6 +11,7 @@ html{
     --theme-overlay: rgba(0, 0, 0, 0.661);
     --accent-overlay: rgba(15, 155, 224, 0.78);
     --text-color:#969696;
+    --nav-overlay: rgba(0, 0, 0, 0.75);
 }
 section{
     overflow: hidden;
@@ -20,7 +21,7 @@ header{
     /* height: 100vh; */
 }
 nav{
-    background-color: var(--theme-overlay);
+    background-color: var(--nav-overlay);
     transition-duration: 0.7s;
 }
 .navbar-toggler{
