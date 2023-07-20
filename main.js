@@ -1,5 +1,6 @@
 const popUpContent = document.querySelector('#overlay');
 const activePopup = document.querySelectorAll('.activePopup');
+const nav = document.querySelector('nav');
 
 activePopup.forEach((e,i)=>{
     e.addEventListener('click',()=>{
@@ -116,4 +117,15 @@ function propagationStop(e){e.stopPropagation()}
 
 // animation script
     AOS.init();
+
+
+// nav scroll macanizom
+let divHeight = nav.clientHeight;
+window.onscroll= ()=>{
+    if ((divHeight*0.80) < window.scrollY) {
+        nav.classList.add('scroll-efect');
+    } else {
+        nav.classList.remove('scroll-efect');
+    }
+}
   
