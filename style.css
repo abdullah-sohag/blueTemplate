@@ -21,7 +21,7 @@ header{
 }
 nav{
     background-color: var(--theme-overlay);
-    
+    transition-duration: 0.7s;
 }
 .navbar-toggler{
     border: 2px solid var(--primary-color);
@@ -651,6 +651,18 @@ footer form input{
      }
      .quation-content .content::after,.quation-content .content::before{
         display: block;
+     }
+
+    nav.scroll-efect{
+        height: 80px;
+        box-shadow: 2px 1px 11px 2px rgba(128, 123, 110, 0.43);
+     }
+     .carousel{
+        margin-top: 0;
+     }
+     
+     .carousel-indicators{
+        display: none;
      }
    
 }
